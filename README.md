@@ -1,4 +1,4 @@
-# Orientações para a Prova [30/08/2022 - 15:30 até 17:00]
+# Orientações - Prova [30/08/2022 - 15:30 até 17:00]
 
 ## Distribuição das Questões (Questões A e B)
 
@@ -14,14 +14,15 @@
 # Comandos Git a serem executados
 
 ## Clonar o repositório
-No terminal do VSCode, digite:
-```GIT
-git clone https://github.com/ldmfabio/if_ternario_switch_case_1INFO2.git
-```
-Ou então, pressione as teclas **Ctrl Shift P**, digite **Clonar**, selecione a opção Git Clone e cole o seguinte conteúdo na caixa de texto que aparecer:
+Pressione as teclas **Ctrl Shift P**, digite **Clonar**, selecione a opção Git Clone e cole o seguinte conteúdo na caixa de texto que aparecer:
 ```html
 https://github.com/ldmfabio/if_ternario_switch_case_1INFO2.git
 ```
+*Ou então*, no terminal do VSCode, digite:
+```GIT
+git clone https://github.com/ldmfabio/if_ternario_switch_case_1INFO2.git
+```
+
 *Dica: Se você for fazer a **Prova A**, exclua a pasta **Prova B**. Caso você for fazer a **Prova B*, exclua a pasta **Prova A** .*
 
 Após, abra o repositório clonado, clicando na mensagem que o próprio VSCode irá mostrar, no canto inferior direito da tela.
@@ -48,9 +49,11 @@ Ou então pressionar as teclas **Ctrl Shift G**
 Caso queira voltar aos seus arquivos, pressione as teclas **Ctrl Shift E**
 
 # Enviar arquivos para o GitHub
+**Ao terminar todos os exercícios:**
 * Clique na opção **Publicar Branch**, que aparece no gerenciador de Código-Fonte (Acessando com as teclas **Ctrl Shift G**)
 * Digite o nome do repositório na caixa de texto que será apresentada
 * Selecione nas opções abaixo da caixa de texto se deseja que o repositório seja **Público** ou **Privado**
+  * Caso opte por criar um repositório privado, será necessário me adicionar como colaborador, usando a interface do GitHub Web (Meu usuário GitHub -> ***ldmfabio***)
 * Abra o repositório e copie a URL ou o link do seu repositório
 * Vá ao classroom, na atividade referente a Prova, clique em adicionar Link e cole o conteúdo que copiou
 * Faça a entrega da atividade
