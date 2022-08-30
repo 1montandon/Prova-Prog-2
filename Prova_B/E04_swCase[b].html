@@ -13,11 +13,29 @@
     //DICA: Use G para gasolina, A para álcool, N para GNV, D para diesel
 
     //ENTRADA
-
+    const  tipoCombustivel = prompt("informe que tipo de combustivel deseja colocar no seu veiculo").toLowerCase();
+    let resultado
 
     //PROCESSAMENTO
-
+    switch (tipoCombustivel) {
+        case "g":
+            resultado = "O litro da gasolina custa R$ 5,00"
+            break;
+         case "a":
+            resultado = "álcool está em falta"
+           break;
+        case "n":
+            resultado = "GNV está caro demais"
+           break;
+        case "d":
+            resultado = "O litro do diesel custa R$ 8,00"
+           break;
+        default:
+            resultado = "Opção de combustivel invalida"
+            break;
+    }
 
     //SAÍDA
+    document.write(resultado)
 
 </script>

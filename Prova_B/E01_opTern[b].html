@@ -11,11 +11,24 @@
     //Calcule os pontos e apresente o nível de experiência do Programador
 
     //ENTRADA
-
-
+    const  anosExperiencia = parseInt(prompt("Informe quantos anos de experiecia profissional  | 1 | 2 | 3 "))
+    const  cursoTecnico = parseInt(prompt(`tem curso tecnico na area de informatica? ( 1 - sim | 0 -  nao)`))
+    const  cursoGraduacao = parseInt(prompt(`tem graduação na area de informatica? ( 1 - sim | 0 - nao )`))
+    
     //PROCESSAMENTO
+    let pontosCursoTecnico;
+    let pontosCursoGraduacao;
+    let resultado;
 
-
+    (cursoTecnico === 1) ? pontosCursoTecnico = 10 
+    : pontosCursoTecnico = 0;
+    (cursoGraduacao === 1 )? pontosCursoGraduacao = 15 
+    : pontosCursoGraduacao = 0;
+    let pontos = (anosExperiencia*4 )+ pontosCursoGraduacao + pontosCursoTecnico ;
+    (pontos <= 25)? resultado = "iniciante" : 
+    resultado = "experiente";
+  
     //SAÍDA
+    document.write(`voce tem ${pontos} pontos, sendo  nivel ${resultado}`)
 
 </script>

@@ -10,11 +10,18 @@
     //Apresente a situação do preço do combustível
 
     //ENTRADA
-
+    const postoUm =  Number(prompt("informe o preco do litro da gasolina no posto 1"))
+    const postoDois =  Number(prompt("informe o preco do litro da gasolina no posto 2"))
+    const postoTres =  Number(prompt("informe o preco do litro da gasolina no posto 3"))
+    const mediaPosto = (postoUm + postoDois + postoTres )/ 3
 
     //PROCESSAMENTO
-
+    let resultado
+    (mediaPosto <= 5)? resultado = "aceitavel" 
+    :(mediaPosto <= 6.5)? resultado = "alto"
+    :resultado = "abusivo"
 
     //SAÍDA
+    document.write(`a media de valor dos postos é de R$${mediaPosto}, sendo ${resultado}`)
 
 </script>

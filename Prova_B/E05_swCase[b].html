@@ -11,11 +11,27 @@
     //Calcule e apresente o valor total a ser pago para o funcionário, de acordo com o seu cargo e a quantidade de horas trabalhadas.
 
     //ENTRADA
-
+    const cargo = prompt("informe o cargo do funcionario").toLowerCase()
+    const horasTrabalhao = Number(prompt("informe quantas horas trabalhadas por dia"))
 
     //PROCESSAMENTO
-
+    let  resultado
+    switch (cargo) {
+        case "programador":
+            resultado = (horasTrabalhao*10) + ((horasTrabalhao*10)*0.10)
+            break;
+        case "lider":
+            resultado =  (horasTrabalhao*10) + ((horasTrabalhao*10)*0.15)
+            break;
+        case "diretor":
+            resultado =  (horasTrabalhao*10) + ((horasTrabalhao*10)*0.3)
+        break;
+        default:
+            resultado = "valor invalido"
+            break;
+    }
 
     //SAÍDA
+    document.write(`R$ ${resultado}`)
 
 </script>
